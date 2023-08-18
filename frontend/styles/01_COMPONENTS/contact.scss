@@ -1,0 +1,44 @@
+.contact{
+    padding: vw(20px) vw(60px);
+
+    &-title{
+        margin-bottom: vw(60px);
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &__texte,&__game{
+            width: 50%;
+            height: 70vh;
+            
+        }
+
+        &__game{
+            background:var(--color-primary);
+        }
+
+        &__texte{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: vw(50px);
+
+            .contact-bloc{
+                a{
+                    color: var(--color-dark);
+
+                    &:hover{
+                        color: var(--color-primary);
+                    }
+                }
+            }
+            .mail{
+                text-transform: uppercase;
+            }
+        }
+    }
+}

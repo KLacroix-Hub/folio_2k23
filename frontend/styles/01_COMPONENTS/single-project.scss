@@ -1,0 +1,64 @@
+.project{
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: vw(80px);
+    padding: 0 vw(60px) 0 vw(80px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    &-title{
+        width: 10%;
+        height: fit-content;
+        transform: rotate(-90deg);
+    }
+
+    &-content{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap:vw(45px);
+
+        &__texte{
+            display: flex;
+            flex-direction: row;
+            gap: vw(60px);
+
+            p{
+                width: 80%;
+            }
+
+            .details{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                gap: vw(10px);
+                text-align: end;
+
+                p{
+                    width: 100%;
+                }
+            }
+
+        }
+        .galery-image{
+            width: 100%;
+            height: 80%;
+            img{
+                width: 100%;
+                height: vw(600px);
+                object-fit: cover;
+            }
+        }
+    }
+
+    .owl-stage{
+        width: 100% !important;
+
+        .owl-item{
+            width: 100% !important;
+        }
+    }
+}

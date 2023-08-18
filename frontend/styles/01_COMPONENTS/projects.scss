@@ -1,0 +1,89 @@
+.projects{
+    &-title{
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        padding: vw(45px) vw(60px) vw(40px) vw(55px);
+        position: relative;
+
+        &__number{
+            width: vw(40px);
+            height: vw(40px);
+            position: absolute;
+            top: vw(40px);
+            right: vw(50px);
+            padding: vw(10px);
+            border: 1px solid var(--color-primary);
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: var(--color-light);
+            z-index: 9;
+        }   
+    }
+    .owl-stage{
+        padding-left:vw(60px) !important;
+
+        .item{
+            overflow-x: hidden;
+            position: relative;
+            // &:hover{
+            //     img{
+            //         transform: scale(1.1);
+            //     }
+            // }
+            
+            border: 1px solid var(--color-primary);
+            &::before{
+                content: "";
+                width: 100%;
+                height: 85%;
+                background: var(--color-primary);
+                opacity: .4;
+                position: absolute;
+                inset: 0;
+                z-index: 9;
+            }
+            
+            img{
+                position: relative;
+                display: flex;
+                z-index: 8;
+                transform-origin: bottom;
+                transition: transform 600ms ease-in-out;
+                object-fit: cover;
+
+            }
+
+            &-informations{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: vw(20px) vw(15px);
+
+
+                &__type{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: vw(5px);
+
+                }
+            }
+        }
+    }
+
+    .item-overlay{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--color-primary);
+        opacity: 1;
+        z-index: 100;
+        transition: all 600ms ease-in-out;
+    }
+}

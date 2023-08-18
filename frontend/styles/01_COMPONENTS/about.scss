@@ -1,0 +1,89 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: vw(60px);
+    padding:vw(20px) vw(60px);
+
+    &-heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        p{
+            width: 41%;
+        }
+    }
+
+    .isActive{
+        &::after{
+            background: transparent;
+            backdrop-filter: none;
+        }
+    }
+
+    &-three{
+        height: 70vh;
+        position: relative;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::after{
+            content:"";
+            width: 100%;
+            height: 100%;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index: 2;
+            background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.85) 15.10%, rgba(255, 255, 255, 0.00) 100%);
+            backdrop-filter: blur(35px);
+        }
+
+
+        .game{
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background: #000;
+            position: relative;
+        }
+
+        &__start{
+            position: absolute;
+            left: vw(30px);
+            bottom: vw(30px);
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: vw(30px);
+            border-radius: vw(10px);
+            padding: vw(10px) vw(5px) vw(10px) vw(15px);
+            background: var(--color-primary);
+            cursor: pointer;
+            z-index: 3;
+
+            &-togo{
+                width: vw(28px);
+                height: vw(28px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: var(--color-light);
+                border-radius: vw(50px);
+                img{
+                    width: 50%;
+                    height: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

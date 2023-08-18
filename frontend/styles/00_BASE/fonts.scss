@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Hagrid-bold';
+    src: url('/fonts/H-bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Hagrid-regular';
+    src: url('/fonts/H-reg.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap');
+
+.headline{
+    font-family: 'Hagrid-bold', sans-serif;
+    color: var(--color-primary);
+    text-transform: uppercase;
+
+    &-xxl{
+        font-size: vw(220px);
+        letter-spacing: .05em;
+        text-align: center;
+    }
+
+    &-lg{
+        font-size: vw(100px);
+        letter-spacing: .05em;
+    }
+    &-md{
+        font-size: vw(90px);
+        letter-spacing: .01em;
+    }
+
+    &-sm{
+        font-size: vw(45px);
+        color: var(--color-light);
+
+        .item-informations & {
+            text-transform: inherit;
+            color: var(--color-primary);
+        }
+    }
+
+    &-game{
+        font-size: vw(45px);
+        line-height: vw(50px);
+        color: var(--color-light);
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+
+.body{
+    color: var(--color-dark);
+    font-family: 'Inter',sans-serif;
+    
+    &-xl{
+    font-family: "Hagrid-regular",sans-serif;
+    font-size: vw(16px);
+
+    .boutonView &{
+        color: var(--color-light);
+    }
+    }
+
+    &-md{
+        font-weight: 700;
+        font-size: vw(16px);
+        color: var(--color-primary);
+    }
+
+    &-sm{
+        font-weight: 500;
+        font-size: vw(16px);
+        color: var(--color-primary);
+    }
+
+    &-regular{
+        font-weight: 500;
+        font-size: vw(16px);
+        line-height: vw(25px);
+    }
+
+    &-light{
+        font-weight: 300;
+        font-size: vw(16px);
+        line-height: vw(25px);
+    }
+
+    &-posts{
+        font-family: 'Inter',sans-serif;
+        font-weight: 900;
+        font-size: vw(16px);
+        color: var(--color-primary);
+    }
+
+    &-lg{
+        font-weight: 700;
+        font-size: vw(18px);
+        color: var(--color-dark);
+    }
+
+    &-contact{
+        font-size: vw(25px);
+        font-weight: 700;
+    }
+
+    &-reset{
+        font-size: vw(18px);
+        font-weight: 800;
+        text-transform: uppercase   ;
+    }
+
+    &-writing{
+        font-weight: 700;
+        font-size: vw(60px);
+        color: var(--color-primary);
+    }
+
+    &-xxs{
+        font-size: vw(14px);
+        line-height: 130%;
+        font-weight: 500;
+        color: var(--color-dark);
+
+        .about-three__start & {
+            font-weight: 800;
+            color: var(--color-light);
+            text-transform: uppercase;
+        }
+    }
+}
+  

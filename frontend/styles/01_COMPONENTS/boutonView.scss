@@ -1,0 +1,15 @@
+.boutonView{
+    width: vw(80px);
+    height: vw(80px);
+    border-radius: vw(50px);
+    pointer-events: none;
+    cursor:none;
+    transform: translate(-50%, -50%);
+    background: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: var(--color-primary);
+}
